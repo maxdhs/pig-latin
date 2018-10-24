@@ -6,24 +6,35 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
 
       <h1>Pig Latin Generator</h1>
 
-      <form id="pig-latin">
-        <div class="form-group">
-          <label for="sentence">Enter a sentence to convert to Pig Latin:</label>
-          <input id="sentence" type="text"></input>
-        </div>
+      <img src="img/pig.png" class="center" alt="a pic of a pig">
 
-        <button type="submit" class="btn btn-primary">Translate!</button>
-      </form>
+    <div class="row">
+      <div class="col-md-7">
+        <form id="pig-latin">
+          <div class="form-group">
+            <label for="sentence">Enter a sentence to convert to Pig Latin:</label>
+            <br>
+            <textarea class="well" id="sentence"></textarea>
 
+          </div>
+      </div>
+      <div class="col-md-4">
+          <label for="outputsentence">Your pig latin translated sentence:</label>
+          <textarea class="well" id="output"></textarea>
+      </div>
+
+        </form>
+      </div>
       <br>
-      <p id="output"></p>
-
+      <button type="submit" class="btn btn-primary">Translate!</button>
     </div>
+
   </body>
 </html>
